@@ -1,0 +1,24 @@
+.card-list-container {
+    padding: 40px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    place-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-list-container {
+        padding: 30px;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card-list-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+}

@@ -1,0 +1,11 @@
+body {
+  margin: 10px 50px 0 50px;
+  max-width: 1440px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    margin: 10px 30px 0 30px;
+  }
+}

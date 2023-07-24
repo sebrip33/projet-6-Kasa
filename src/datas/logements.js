@@ -1,3 +1,4 @@
+export const homeList =
 [
 	{
 		"id": "c67ab8a7",
