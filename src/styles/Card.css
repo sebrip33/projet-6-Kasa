@@ -40,7 +40,7 @@
         height: 230px;
     }
     .kasa-cover {
-        height: 140px;
+        height: 150px;
     }
     .img-title {
         font-size: 14px;
@@ -50,6 +50,7 @@
   @media screen and (max-width: 800px) {
     .img-title {
         margin-top: 3px;
+        font-size: 13px;
     }
   }
 

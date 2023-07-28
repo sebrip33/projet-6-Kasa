@@ -1,11 +1,11 @@
 import React from 'react'
 import Banner from '../Banner'
 import CardsList from '../CardsList'
-import Footer from '../Footer'
 
 function Home() {
   return (
     <div>
+      <Banner activeLink="Accueil" />
       <CardsList />
     </div>
   )

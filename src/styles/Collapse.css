@@ -1,0 +1,45 @@
+.container  {
+    margin: 25px 0;
+}
+
+.collapse-header {
+    background-color: #FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 7px;
+}
+
+.collapse-header h3{
+    color: white;
+    font-weight: 400;
+}
+
+.collapse-text-container {
+    color: #ff6060;
+    background-color: #f6f6f6;
+    padding: 1px 15px;
+}
+
+.arrow-icon {
+    background-color: #FF6060;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .collapse-header h3,
+    .collapse-text {
+        font-size: 13px;
+    }
+    .container {
+        margin: 20px 0;
+    }
+    .arrow-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
