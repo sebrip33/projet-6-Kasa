@@ -9,6 +9,7 @@
     justify-content: space-between;
     padding: 0 10px;
     border-radius: 7px;
+    height: 45px;
 }
 
 .collapse-header h3{
@@ -31,6 +32,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .collapse-header {
+        height: 35px;
+        border-radius: 6px;
+    }
     .collapse-header h3,
     .collapse-text {
         font-size: 13px;

@@ -1,10 +1,12 @@
 import '../styles/Card.css'
+import { Link } from 'react-router-dom'
 import { FaStar } from 'react-icons/fa'
 
 function Card({ id, title, cover, rating }) {
   const ratingValue = parseInt(rating, 10)
+
   return (
-    <li key={id} className="kasa-card">
+    <Link to={`/DetailHome/${id}`} key={id} className="kasa-card">
       <img className="kasa-cover" src={cover} alt={title} />
       <div className="rating">
         {[...Array(5)].map((_, index) => (
@@ -15,7 +17,8 @@ function Card({ id, title, cover, rating }) {
         ))}
       </div>
       <h3 className="img-title">{title}</h3>
-    </li>
+    </Link>
   )
 }
+
 export default Card

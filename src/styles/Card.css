@@ -4,6 +4,11 @@
     list-style: none;
     border-radius: 10px;
     background-color: #FF6060;
+    cursor: pointer;
+    text-decoration: none;
+}
+.kasa-card :hover {
+  opacity: 0.9;
 }
 
 .kasa-cover {
