@@ -1,8 +1,8 @@
-.container  {
+.container {
     margin: 25px 0;
-}
-
-.collapse-header {
+  }
+  
+  .collapse-header {
     background-color: #FF6060;
     display: flex;
     align-items: center;
@@ -10,27 +10,35 @@
     padding: 0 10px;
     border-radius: 7px;
     height: 45px;
-}
-
-.collapse-header h3{
+  }
+  
+  .collapse-header h3 {
     color: white;
     font-weight: 400;
-}
-
-.collapse-text-container {
+  }
+  
+  .collapse-text-container {
     color: #ff6060;
     background-color: #f6f6f6;
     padding: 1px 15px;
-}
-
-.arrow-icon {
+    height: 0; 
+    overflow: hidden;
+    transition: height 0.3s ease-in-out, padding 0.3s ease-in-out; 
+  }
+  
+  .arrow-icon {
     background-color: #FF6060;
     width: 24px;
     height: 24px;
     margin-left: 10px;
     cursor: pointer;
-}
+  }
 
+  .container.open .collapse-text-container {
+    padding: 10px 15px;
+  }
+
+  
 @media screen and (max-width: 600px) {
     .collapse-header {
         height: 35px;

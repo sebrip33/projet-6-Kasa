@@ -88,6 +88,10 @@
     width: 100%;
 }
 
+.collapse-equipments {
+    padding-left: 0;
+}
+
 .detailhome-dropdown h3 {
     color: white;
     font-size: 16px;

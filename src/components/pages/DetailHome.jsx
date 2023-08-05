@@ -61,7 +61,7 @@ function DetailHome() {
             <Collapse
               title="Équipements"
               text={
-                <ul>
+                <ul className="collapse-equipments">
                   {equipments.map((equipment, index) => (
                     <li key={index}>{equipment}</li>
                   ))}
