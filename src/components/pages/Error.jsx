@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import '../../styles/Error.css'
-import Banner from '../Banner'
 
 function Error() {
+  // Affichage de la page d'erreur
   return (
     <div>
       <div className="error-container">

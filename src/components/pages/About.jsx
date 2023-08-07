@@ -1,6 +1,7 @@
 import Collapse from '../../components/collapse/Collapse'
 import '../../styles/About.css'
 import Banner from '../Banner'
+
 function About() {
   return (
     <div>

@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 import '../../styles/DetailHome.css'
 
 function DetailHome() {
+  // Obtenir l'id du logement à partir des paramètres d'URL
   const { id } = useParams()
   // Utiliser un état pour stocker l'id du logement sélectionné
   const selectedHome = homeList.find((home) => home.id === id)
@@ -16,13 +17,17 @@ function DetailHome() {
     return <Error />
   }
 
+  // Extraire les informations du logement sélectionné
   const { title, description, host, rating, location, equipments, tags } =
     selectedHome
+
+  // Convertir la valeur de notation en nombre entier
   const ratingValue = parseInt(rating, 10)
 
   return (
     <>
       <SlideShow data={selectedHome} />
+
       <div className="container-detail">
         <div className="header-detail">
           <div className="title-info">
@@ -34,6 +39,8 @@ function DetailHome() {
               ))}
             </ul>
           </div>
+
+          {/* Infos Hôte et évaluation */}
           <div className="host-rating">
             <ul>
               <li>
@@ -53,6 +60,8 @@ function DetailHome() {
             </div>
           </div>
         </div>
+
+        {/* Barres déroulantes */}
         <div className="detailhome-dropdown">
           <div className="custom-collapse">
             <Collapse title="Description" text={description} />

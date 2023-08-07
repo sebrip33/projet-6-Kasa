@@ -4,14 +4,20 @@ import ArrowUp from '../../assets/arrowup.png'
 import ArrowDown from '../../assets/arrowdown.png'
 
 function Collapse({ title, text }) {
+  // État pour contrôler l'ouverture/fermeture du Collapse
   const [open, setOpen] = useState(false)
+
+  // Hauteur du contenu déroulé
   const [height, setHeight] = useState(0)
+
   const contentRef = useRef(null)
 
+  // Fonction pour basculer l'ouverture/fermeture du Collapse
   const toggleCollapse = () => {
     setOpen((current) => !current)
   }
 
+  // Mettre à jour la hauteur en fonction de l'état "open"
   useEffect(() => {
     setHeight(open ? contentRef.current.scrollHeight : 0)
   }, [open])
@@ -20,6 +26,7 @@ function Collapse({ title, text }) {
     <div className={`container ${open ? 'open' : ''}`}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3>{title}</h3>
+        {/* Utiliser ArrowUp ou ArrowDown en fonction de l'état "open" */}
         <img
           src={open ? ArrowDown : ArrowUp}
           alt={open ? 'Flêche haut' : 'Flêche bas'}
@@ -31,6 +38,7 @@ function Collapse({ title, text }) {
         style={{ height: `${height}px` }}
         ref={contentRef}
       >
+        {/* Afficher le texte du Collapse */}
         {typeof text === 'string' ? (
           <p className="collapse-text">{text}</p>
         ) : (
