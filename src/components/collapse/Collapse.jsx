@@ -21,7 +21,7 @@ function Collapse({ title, text }) {
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3>{title}</h3>
         <img
-          src={open ? ArrowUp : ArrowDown}
+          src={open ? ArrowDown : ArrowUp}
           alt={open ? 'Flêche haut' : 'Flêche bas'}
           className="arrow-icon"
         />
