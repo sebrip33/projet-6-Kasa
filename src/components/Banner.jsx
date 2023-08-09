@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../styles/Banner.css'
+import '../styles/Banner.scss'
 import bannerImage1 from '../assets/img-banner.png'
 import bannerImage2 from '../assets/Image-banner-2.png'
 

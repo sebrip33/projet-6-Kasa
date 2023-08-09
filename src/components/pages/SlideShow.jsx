@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import '../../styles/SlideShow.css'
+import '../../styles/SlideShow.scss'
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 function SlideShow({ data }) {

@@ -4,7 +4,7 @@ import Collapse from '../collapse/Collapse'
 import Error from './Error'
 import { FaStar } from 'react-icons/fa'
 import { useParams } from 'react-router-dom'
-import '../../styles/DetailHome.css'
+import '../../styles/DetailHome.scss'
 
 function DetailHome() {
   // Obtenir l'id du logement à partir des paramètres d'URL

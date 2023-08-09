@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import '../../styles/Error.css'
+import '../../styles/Error.scss'
 
 function Error() {
   // Affichage de la page d'erreur

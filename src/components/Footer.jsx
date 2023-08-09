@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import footer from '../assets/footer.png'
 import footerMobile from '../assets/footer-mobile.png'
-import '../styles/Footer.css'
+import '../styles/Footer.scss'
 
 function Footer() {
   // Etat pour déterminer si l'affichage est en mode mobile

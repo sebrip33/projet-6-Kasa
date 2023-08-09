@@ -1,6 +1,6 @@
 import { homeList } from '../datas/logements.js'
 import Card from './Card.jsx'
-import '../styles/CardList.css'
+import '../styles/CardList.scss'
 
 // Fonction pour afficher la liste des cartes de logements
 function CardsList() {

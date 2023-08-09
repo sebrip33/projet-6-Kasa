@@ -7,17 +7,13 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     place-items: center;
-}
 
-@media screen and (max-width: 1000px) {
-    .card-list-container {
+    @media screen and (max-width: 1000px) {
         padding: 30px;
         gap: 20px;
     }
-}
 
-@media screen and (max-width: 600px) {
-    .card-list-container {
+    @media screen and (max-width: 600px) {
         grid-template-columns: repeat(1, 1fr);
         padding: 0;
     }
