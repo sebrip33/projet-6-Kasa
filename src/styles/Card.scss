@@ -6,29 +6,10 @@
   background-color: #FF6060;
   cursor: pointer;
   text-decoration: none;
+}
 
-  &:hover {
-    opacity: 0.9;
-  }
-
-  @media screen and (max-width: 1000px) {
-    height: 230px;
-  }
-
-  @media screen and (max-width: 800px) {
-    .img-title {
-      margin-top: 3px;
-      font-size: 13px;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    height: 210px;
-
-    .kasa-cover {
-      height: 140px;
-    }
-  }
+.kasa-card :hover {
+  opacity: 0.9;
 }
 
 .kasa-cover {
@@ -44,23 +25,51 @@
   font-weight: 400;
   padding: 0 15px;
 
-  @media screen and (max-width: 1000px) {
-    font-size: 14px;
-  }
 }
 
 .rating {
   display: flex;
   width: 30%;
   padding-left: 15px;
+}
 
-  .star {
-    color: #ffffff8a;
-    /* couleur d'une étoile vide */
+.star {
+  color: #ffffff8a;
+  /* couleur d'une étoile vide */
+}
+
+.star.filled {
+  color: #ffbf00;
+  /* couleur d'une étoile remplie */
+}
+
+@media screen and (max-width: 1000px) {
+  .kasa-card {
+    height: 230px;
   }
 
-  .star.filled {
-    color: #ffbf00;
-    /* couleur d'une étoile remplie */
+  .kasa-cover {
+    height: 150px;
+  }
+
+  .img-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .img-title {
+    margin-top: 3px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .kasa-card {
+    height: 210px;
+  }
+
+  .kasa-cover {
+    height: 140px;
   }
 }
