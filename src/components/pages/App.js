@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import About from '../pages/About';
@@ -7,7 +7,6 @@ import Header from '../Header';
 import Footer from '../Footer';
 import '../../styles/App.scss';
 import { createRoot } from 'react-dom/client';
-import Card from '../Card';
 import DetailHome from './DetailHome';
 
 const root = createRoot(document.getElementById('root'));

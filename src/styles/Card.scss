@@ -54,12 +54,12 @@
 
   .img-title {
     font-size: 14px;
+    margin-top: 10px;
   }
 }
 
 @media screen and (max-width: 800px) {
   .img-title {
-    margin-top: 3px;
     font-size: 13px;
   }
 }
@@ -71,5 +71,9 @@
 
   .kasa-cover {
     height: 140px;
+  }
+
+  .img-title {
+    margin-top: 5px;
   }
 }
