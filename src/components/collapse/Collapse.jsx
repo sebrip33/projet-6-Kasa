@@ -26,12 +26,8 @@ function Collapse({ title, text }) {
     <div className={`container ${open ? 'open' : ''}`}>
       <div className="collapse-header" onClick={toggleCollapse}>
         <h3>{title}</h3>
-        {/* Utiliser ArrowUp ou ArrowDown en fonction de l'état "open" */}
-        <img
-          src={open ? ArrowDown : ArrowUp}
-          alt={open ? 'Flêche haut' : 'Flêche bas'}
-          className="arrow-icon"
-        />
+        {/* Utiliser ArrowUp en fonction de l'état "open" */}
+        <img src={ArrowUp} alt={'Flêche haut'} className="arrow-icon" />
       </div>
       <div
         className="collapse-text-container"

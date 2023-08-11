@@ -4,6 +4,10 @@
   &.open .collapse-text-container {
     padding: 10px 15px;
   }
+
+  &.open .arrow-icon {
+    transform: rotate(180deg);
+  }
 }
 
 .collapse-header {
@@ -41,6 +45,7 @@
   height: 24px;
   margin-left: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 @media screen and (max-width:1000px) {
