@@ -7,9 +7,6 @@ function Header() {
   // Obtenir l'emplacement actuel de la page
   const location = useLocation()
 
-  // État pour gérer l'état du menu déroulant
-  const [isCollapsed, setIsCollapsed] = useState(true)
-
   // État pour suivre le lien actif
   const [activeLink, setActiveLink] = useState('Accueil')
 
@@ -38,17 +35,13 @@ function Header() {
 
       {/* Navigation */}
       <nav>
-        <ul className={isCollapsed ? 'kasa-nav' : 'collapse-menu hidden'}>
+        <ul className="kasa-nav">
           {/* Lien Accueil */}
           <li>
             <Link
               to="/"
               onClick={() => handleLinkClick('Accueil')}
-              className={
-                activeLink === 'Accueil'
-                  ? 'collapse-link-1 active'
-                  : 'collapse-link-1'
-              }
+              className={activeLink === 'Accueil' ? 'active' : ''}
             >
               Accueil
             </Link>
@@ -59,11 +52,7 @@ function Header() {
             <Link
               to="/About"
               onClick={() => handleLinkClick('A propos')}
-              className={
-                activeLink === 'A propos'
-                  ? 'collapse-link-2 active'
-                  : 'collapse-link-2'
-              }
+              className={activeLink === 'A propos' ? 'active' : ''}
             >
               A propos
             </Link>
