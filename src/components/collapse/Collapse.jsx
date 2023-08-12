@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import '../../styles/Collapse.scss'
 import ArrowUp from '../../assets/arrowup.png'
-import ArrowDown from '../../assets/arrowdown.png'
 
 function Collapse({ title, text }) {
   // État pour contrôler l'ouverture/fermeture du Collapse
